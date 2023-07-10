@@ -1,3 +1,50 @@
-.message-container--self .text-normal {
-    color: red;
+/* 右键回复选项高亮 */
+#qContextMenu.q-context-menu__mixed-type > a:nth-child(5) {
+  color: red;
+  font-weight: bold;
+}
+/* 评论区右下角小人跳舞 */
+/* 白天模式 */
+.q-theme-tokens-light .ck .ck-editor__main {
+  background-image: url(https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif); /* 默认小人 */
+  /* background-image: url(https://i.postimg.cc/9MMq4QM0/output-17-17-23.gif); */
+  background-size: 95px 95px;
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 20px;
+  transition: all 0.25s ease-in-out 0s;
+}
+/* 无消息logo图标渐变 */
+@keyframes rainbow {
+  0% {
+    fill: red;
+  }
+  14% {
+    fill: orange;
+  }
+  28% {
+    fill: yellow;
+  }
+  42% {
+    fill: green;
+  }
+  57% {
+    fill: blue;
+  }
+  71% {
+    fill: indigo;
+  }
+  85% {
+    fill: violet;
+  }
+  100% {
+    fill: red;
+  }
+}
+
+.q-empty-page-img svg path {
+  animation: rainbow 6s linear infinite;
+}
+
+.contact-layout__left-area .radio-tab .radio-tab__item.radio-tab__item--background {
+  background: none !important;
 }

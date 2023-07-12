@@ -1,11 +1,6 @@
-/* 右键回复选项高亮 */
-#qContextMenu.q-context-menu__mixed-type > a:nth-child(5) {
-  color: red;
-  font-weight: bold;
-}
 /* 评论区右下角小人跳舞 */
 /* 白天模式 */
-.q-theme-tokens-light .ck .ck-editor__main {
+.q-theme-tokens-light .noto-raw-emoji {
   background-image: url(https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif); /* 默认小人 */
   /* background-image: url(https://i.postimg.cc/9MMq4QM0/output-17-17-23.gif); */
   background-size: 95px 95px;
@@ -47,4 +42,12 @@
 
 .contact-layout__left-area .radio-tab .radio-tab__item.radio-tab__item--background {
   background: none !important;
+}
+/* 恢复vip红色昵称颜色 */
+.vip-name {
+  color: var(--text_primary) !important;
+}
+/* 右键回复选项高亮 */
+.q-context-menu-item.q-context-menu-item--normal:has(path[d^='M6.00031']) {
+  color: red;
 }

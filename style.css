@@ -51,3 +51,10 @@
 .q-context-menu-item.q-context-menu-item--normal:has(path[d^='M6.00031']) {
   color: red;
 }
+/* 其他用户信息@用户名改成主题色 */
+.message-content__wrapper
+  .msg-content-container.container--others
+  .text-element
+  > .text-element--at {
+  color: var(--theme-color);
+}
